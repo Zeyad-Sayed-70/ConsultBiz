@@ -541,6 +541,11 @@ body {
     padding-top: var(--main-padding);
     padding-bottom: var(--main-padding);
 }
+@media (max-width: 767px) {
+    .aboutus {
+        text-align: center;
+    }
+}
 .aboutus .container {
     display: flex;
     gap: 60px;
@@ -598,6 +603,7 @@ body {
 @media (max-width: 767px) {
     .aboutus .container .text {
         flex-basis: 100%;
+        padding: 0;
     }
 }
 .aboutus .container .text h4 {
@@ -619,8 +625,13 @@ body {
 }
 .aboutus .container .text p {
     margin: 0;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     width: 450px;
+}
+@media (max-width: 767px) {
+    .aboutus .container .text p {
+        width: auto;
+    }
 }
 .aboutus .container .text p:last-of-type {
     color: var(--black-color);
@@ -643,6 +654,12 @@ body {
     .features .container {
         flex-direction: column;
         align-items: center;
+    }
+}
+@media (max-width: 767px) {
+    .features .container {
+        flex-direction: column;
+        align-items: center;
         text-align: center;
     }
 }
@@ -650,6 +667,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-basis: 60%;
+    padding: 30px;
 }
 @media (max-width: 1199px) {
     .features .container .featuers-contnet {
@@ -706,6 +724,16 @@ body {
     }
 }
 @media (max-width: 991px) {
+    .features .container .featuers-contnet .feats .feat {
+        gap: 15px;
+        margin: 30px 0;
+    }
+    .features .container .featuers-contnet .feats .feat h4,
+    .features .container .featuers-contnet .feats .feat p {
+        margin: 0;
+    }
+}
+@media (max-width: 767px) {
     .features .container .featuers-contnet .feats .feat {
         gap: 15px;
         flex-direction: column;
@@ -823,7 +851,7 @@ body {
     color: #fff;
 }
 .counter .container .box p {
-    color: var(--p-color);
+    color: #d6d6d6;
     font-size: .9rem;
 }
 /* End Counter */
@@ -1133,6 +1161,11 @@ body {
         width: 100%;
     }
 }
+@media (max-width: 767px) {
+    .footer .container .top-section .contact-Finfo {
+        text-align: center;
+    }
+}
 .footer .container .top-section .contact-Finfo {
     opacity: 0;
 }
@@ -1185,6 +1218,11 @@ body {
 @media (max-width: 991px) {
     .footer .container .top-section .quick-links {
         flex: 1;
+    }
+}
+@media (max-width: 767px) {
+    .footer .container .top-section .quick-links {
+        text-align: center;
     }
 }
 .footer .container .top-section .quick-links ul {
